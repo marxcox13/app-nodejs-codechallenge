@@ -1,0 +1,76 @@
+{
+  "info": {
+    "_postman_id": "dca4b65d-b4c5-481f-abf8-e807c0c9af04",
+    "name": "Technical Challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51492573"
+  },
+  "item": [
+    {
+      "name": "CREATE TRANSACCION",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "httpMethod",
+            "value": "POST",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"body\" : {\r\n        \"phone\": \"98612132\",\r\n        \"ammount\": 10.00\r\n    } \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://v7blqd35g2.execute-api.us-east-1.amazonaws.com/default/pruebaTecnica",
+          "protocol": "https",
+          "host": [
+            "v7blqd35g2",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "default",
+            "pruebaTecnica"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET TRANSACCION",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://v7blqd35g2.execute-api.us-east-1.amazonaws.com/default/pruebaTecnica",
+          "protocol": "https",
+          "host": [
+            "v7blqd35g2",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "default",
+            "pruebaTecnica"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

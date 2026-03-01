@@ -1,3 +1,32 @@
+ROUTES DEPLOYED TO USED
+POST/GET
+https://v7blqd35g2.execute-api.us-east-1.amazonaws.com/default/pruebaTecnica
+
+POST
+SEND EVENT TO ANTIFRAUD
+GET
+GET INFO TO TRANSACCION
+
+
+SERVICE AWS USED
+MSK = KAFKA
+LAMBDA = JAVA
+APIGATEWAY
+CLOUDWATCH
+DYNAMO = DB
+VPC
+
+COMMANDS TO DEPLOY AWS
+
+aws lambda update-function-configuration --function-name pruebaTecnica --runtime java25 --handler org.lambda.LambdaSendMessage::handleRequest
+
+aws lambda update-function-configuration --function-name pruebaTecnicaConsumer --runtime java25 --handler org.lambda.LambdaConsummerMessage::handleRequest
+
+aws lambda update-function-code --function-name pruebaTecnica --zip-file fileb://target/java-client-1.0-SNAPSHOT.jar
+
+aws lambda update-function-code --function-name pruebaTecnica --zip-file fileb://target/java-client-consummer-1.0-SNAPSHOT.jar
+
+
 # Yape Code Challenge :rocket:
 
 Our code challenge will let you marvel us with your Jedi coding skills :smile:. 
