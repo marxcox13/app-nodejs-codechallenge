@@ -16,6 +16,9 @@ CLOUDWATCH
 DYNAMO = DB
 VPC
 
+COMPILE JAVA
+mvn clean package
+
 COMMANDS TO DEPLOY AWS
 
 aws lambda update-function-configuration --function-name pruebaTecnica --runtime java25 --handler org.lambda.LambdaSendMessage::handleRequest
