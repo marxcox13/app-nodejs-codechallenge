@@ -1,6 +1,8 @@
 ROUTES DEPLOYED TO USED
 POST/GET
 https://v7blqd35g2.execute-api.us-east-1.amazonaws.com/default/pruebaTecnica
+## WARNING: THE API GATEWAY IS LIMITED TO 10 CALLS PER MINUTE
+
 
 POST
 SEND EVENT TO ANTIFRAUD
